@@ -19,9 +19,9 @@ class TestClass {
 			long totalCost = 0;
 			while(n > 3)
 			{
-				long cost_first = price[0] + 2 * price[1] + price[n-1];
-				long cost_second = 2 * price[0] + price[n-2] + price[n-1];
-				totalCost = totalCost + Math.min(cost_first,cost_second);
+				long costFirst = price[0] + 2 * price[1] + price[n-1];
+				long costSecond = 2 * price[0] + price[n-2] + price[n-1];
+				totalCost = totalCost + Math.min(costFirst,costSecond);
 				n = n - 2;
 			}
 			if(n==3)
